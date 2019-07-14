@@ -7,7 +7,7 @@ function updateDriverWithKeyAndValue(driver, key, value) {
 }
 
 function destructivelyUpdateDriverWithKeyAndValue(driver, key, value) {
-    Object.assign(driver, {[key] : value})
+    Object.assign(driver, {[key] : value}) //merges driver with new hash. If new hash has same key name as driver, overwrites value of that key to reflect merged hash's key
 	return driver
 }
 
